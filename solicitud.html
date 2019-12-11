@@ -8,6 +8,7 @@
 	<head>
 		<title>MI HOME ONP</title>
 		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
@@ -38,25 +39,49 @@
 		<!-- Main -->
 		<div id="main" >
 			<!-- One -->
-			<h1>Capacitaciones</h1>
-			<hr size=1 style="margin-right: 80%;">
-			<br><br>
-			<div class="row">
-			<article>
-				<a href="http://e-learning.onp.gob.pe/" target="_blank" class="image fit thumb"><img src="images/elearning.jpeg" alt="" /></a>
-				<p style="text-align: center;">E-learning ONP</p>
-			</article>
-			<article style="width: 178px;">
-			</article>
-			<article>
-				<a href="images/fulls/02.jpg" class="image fit thumb"><img src="images/servir.jpeg" alt="" /></a>
-				<p style="text-align: center;">SISCA - SERVIR</p>
-			</article>
-			<article style="width: 178px;">
-			</article>
-			<article>
-				<a href="images/fulls/03.jpg" class="image fit thumb"><img src="images/capas.jpeg" alt="" /></a>
-				<p style="text-align: center;">Capacitaciones<br>Disponibles</p>
+			<h1>Solicitudes</h1>
+			<hr size=1 style="margin-right: 85%;">
+			<br>
+			<div class="row">		
+				<article>
+					<form method="post" action="#">
+						<label for="department">¿Cómo podemos ayudarte?</label><br>
+						<ul class="lista">	  
+							<!-- Pregunta 2 -->
+							<li class="pregunta" data-resp_id="resp_2">
+								<span>Tipo de Solicitud</span>
+								<i class="ico_resp fas fa-angle-down"></i>
+							</li>
+							<li class="respuesta" id="resp_2">
+								<span id="sp_resp_2">Constancia de Trabajo<br>Certificado de trabajo<br>Seguro de Vida<br>Seguro para Prácticas<br>SCTR<BR></span>
+							</li>
+						  </ul>
+				<div class="content">
+					
+								<div class="field">
+								
+								<select name="department" id="department">
+									
+									<option value="">-  -</option>
+									<option value="1">Constancia de Trabajo</option>
+									<option value="2">Certificado de trabajo</option>
+									<option value="3">Retención de 5ta Categoria</option>
+									<option value="4">Retención de 4ta Categoria</option>
+									<i class="ico_resp fas fa-angle-down"></i>
+								</select>
+							</div>
+							
+							<div class="field">
+								<label for="message">Si tienes alguna precisión, detállala aquí:</label><br>
+								<textarea name="message" id="message" rows="6"></textarea>
+							</div>
+							</div>
+							</div>
+						<ul class="actions">
+							<li><input type="submit" name="submit" id="submit" value="Enviar Solicitud" /></li>
+						</ul>
+					</form>
+				</div>
 			</article>
 		</div>
 
@@ -75,6 +100,13 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+
+		<!-- JQuery -->
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+		<!-- Script para controlar la lista de preguntas -->
+		<script src="assets/js/script.js"></script>
+		<!-- FontAwesome -->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
 	</body>
 </html>
